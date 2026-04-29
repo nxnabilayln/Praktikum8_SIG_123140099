@@ -1,16 +1,47 @@
-# React + Vite
+# 🌍 WebGIS Bandar Lampung
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi WebGIS berbasis **React + Leaflet** yang terintegrasi dengan **FastAPI** untuk menampilkan data spasial dalam format GeoJSON.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Deskripsi
+Aplikasi ini dikembangkan sebagai bagian dari tugas praktikum Sistem Informasi Geografis.  
+Tujuan dari aplikasi ini adalah untuk menampilkan data fasilitas di wilayah Bandar Lampung secara interaktif melalui peta digital.
 
-## React Compiler
+Data yang ditampilkan mencakup berbagai jenis fasilitas seperti:
+- Sekolah
+- Fasilitas kesehatan
+- Tempat publik
+- Masjid
+- Perguruan tinggi
+- Pusat perbelanjaan
+- Kantor polisi
+- dan lainnya
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Teknologi yang Digunakan
+- React (Vite)
+- Leaflet (React Leaflet)
+- FastAPI (Backend API)
+- Axios (HTTP request)
+- GeoJSON (format data spasial)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🗺️ Fitur Utama
+- Menampilkan peta wilayah Bandar Lampung
+- Mengambil data GeoJSON dari API FastAPI
+- Menampilkan marker lokasi pada peta
+- Styling marker berbeda berdasarkan kategori
+- Popup interaktif berisi:
+  - Nama lokasi
+  - Jenis fasilitas
+  - Koordinat (Latitude & Longitude)
+- Interaksi peta:
+  - Hover highlight marker
+  - Klik marker untuk zoom ke lokasi
+- Menggunakan basemap satelit (lebih realistis)
+
+
+---
